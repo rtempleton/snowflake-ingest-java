@@ -16,6 +16,7 @@ public class IngestResponse
 {
   //the requestId given to us by the user
   String requestId;
+  String responseCode;
 
   /**
    * getRequestUUID - the requestId as a UUID
@@ -30,5 +31,14 @@ public class IngestResponse
   public String toString()
   {
     return requestId;
+  }
+  
+  public String getResponseCode() {
+	  return responseCode;
+	  
+  }
+  
+  public void setResponseCode(String responseCode) {
+	  this.responseCode = responseCode;
   }
 }
